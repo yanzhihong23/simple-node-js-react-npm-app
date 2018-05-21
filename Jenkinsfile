@@ -9,9 +9,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''npm -v
+        sh '''npm i npm@latest -g  
 
-npm install'''
+npm -v  
+
+npm install  '''
       }
     }
     stage('Test') {
